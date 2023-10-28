@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Lista delle Attività</h1>
+  <!-- Componente TodolistComponent -->
+  <app-todolist></app-todolist>
+
+  <!-- Componente AddtaskComponent -->
+  <app-addtask></app-addtask>
+  <app-filtertask (filterChange)="onFilterChange($event)"></app-filtertask>
+  <ul>
+    <li *ngFor="let task of filteredTasks">{{ task }}</li>
+  </ul>
+
+
+
+</div>

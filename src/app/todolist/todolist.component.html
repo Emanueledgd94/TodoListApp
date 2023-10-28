@@ -1,0 +1,6 @@
+<div *ngFor="let task of tasks; let i = index">
+  {{ task }}
+  <button (click)="updateTask(i)">Modifica</button>
+  <button (click)="deleteTask(i)">Elimina</button>
+</div>
+
